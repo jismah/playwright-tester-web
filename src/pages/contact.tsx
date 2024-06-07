@@ -23,7 +23,7 @@ export default function Contact() {
                 <h2 className="text-base font-semibold leading-7 text-gray-900">Formulario de Contacto</h2>
 
                 <div className="mt-5 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
-                    <form onSubmit={handleSubmit}>
+                    <form id="contactForm" onSubmit={handleSubmit}>
                         <div className="sm:col-span-3">
                             <label htmlFor="first-name" className="block text-sm font-medium leading-6 text-gray-900">
                                 Nombre
@@ -84,7 +84,7 @@ export default function Contact() {
                             </div>
                         </div>
 
-                        <button className="mt-4 bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow">
+                        <button type="submit" className="mt-4 bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow">
                             Enviar Formulario
                         </button>
                     </form>
